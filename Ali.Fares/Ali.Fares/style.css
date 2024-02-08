@@ -1,0 +1,158 @@
+ body{ 
+ margin: 0; 
+ background: #f180; 
+ font-family: 'Work Sana',sana-serif; 
+ font-weight: 400; 
+ padding: 0;
+ } 
+.container{ 
+width: 95%; 
+margin:  0 auto;
+} 
+header{ 
+ background: #00f;
+ }  
+ header::after{
+    content: ''; 
+    display: table; 
+    clear: both;
+ } 
+  
+name{  
+float: left;
+}
+ nav { 
+  float: right;
+  } 
+  nav ul{ 
+  margin: 0; 
+  padding: 0; 
+  list-style: none;
+  } 
+  nav li {  
+display: inline-block;
+  margin-left: 70px; 
+  padding-top: 25px; 
+  position: relative;
+  } 
+  nav a { 
+   color: #ff0; 
+   text-decoration: none; 
+   text-transform: uppercase;  
+   font-size: 14px; 
+   } 
+   nav a:hover{  
+   color: #00f;
+   }  
+   nav a::before{  
+   content: ''; 
+   display: block;
+    height: 5px; 
+  background-color: #0ff; 
+   
+position: absolute;
+ top: 0; 
+ width:0%; 
+ transition: all ease-in-out 250ms; 
+   } 
+   nav a:hover::before{ 
+    width: 100%;
+  }   
+  .newcontainer{ 
+ position: relative; 
+  overflow: hidden; 
+ width: 100%; 
+ height: 100vh; 
+
+  } 
+  .newcontainer .slider 
+  { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 500%;  
+  height: 100%;  
+  animation: animate 30s linear infinite;
+   } 
+ .newcontainer .slider .slide 
+ {     
+  position: relative;
+ width: 20%;  
+  height: 100%; 
+  float:left; 
+  } 
+
+   .newcontainer .slider .slide.slide1 
+   { 
+   background: url(img/1.jpg); 
+   background-size: cover; 
+   background-position: center; 
+    } 
+    .newcontainer .slider .slide.slide2 
+   { 
+   background: url(img/2.jpg); 
+   background-size: cover; 
+   background-position: center; 
+    } 
+       .newcontainer .slider .slide.slide3 
+   { 
+   background: url(img/3.jpg); 
+   background-size: cover; 
+   background-position: center; 
+    } 
+       .newcontainer .slider .slide.slide4 
+   { 
+   background: url(img/4.jpg); 
+   background-size: cover; 
+   background-position: center; 
+    } 
+    @keyframes animate 
+    { 
+    0% 
+    {  
+      left: 0%; 
+       }  
+        20% 
+    {  
+      left: 0%; 
+     } 
+      25% 
+    {  
+      left:-100%;  
+    } 
+       45% 
+    {  
+      left:-100%;  
+    }
+
+ 
+         50% 
+  {
+      left:-200%;  
+  } 
+           70% 
+  {
+      left:-200%;  
+  } 
+           75% 
+  {
+      left:-300%;  
+  } 
+           95% 
+  {
+      left:-300%;  
+  } 
+           100% 
+  {
+      left:-400%;  
+  } 
+}  
+   .newh{   
+    
+    float: right; 
+   margin-right:10px; 
+   margin-bottom: 10px; 
+    border: solid black 0px; 
+     padding: 23px;  
+ }  
+  
